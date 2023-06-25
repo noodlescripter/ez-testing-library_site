@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../assets/main.css">
+    <title>EZ Testing Library</title>
+</head>
+<body>
+<nav class="navbar is-transparent has-background-grey-dark">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+            <div class="container">
+                <h1 class="has-text-weight-bold has-text-light">EZ TESTING LIBRARY</h1>
+            </div>
+        </a>
+        <div class="navbar-burger has-background-danger" data-target="navbarExampleTransparentExample">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="#">
+                Home
+            </a>
+            <a class="navbar-item" href="../cypress/cypress.html">
+                Cypress Lib
+            </a>
+            <a class="navbar-item" href="../wdio/wdio.html">
+                WebdriverIO Lib
+            </a>
+            <a class="navbar-item" href="../playwright/playwright.html">
+                Playwright Lib
+            </a>
+            <a class="navbar-item" href="../selenium/selenium.html">
+                Selenium w/Java Lib
+            </a>
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="field is-grouped">
+                    <p class="control">
+                        <a class="bd-tw-button button" href="https://www.linkedin.com/in/hamim-alam/">
+
+                            <span>
+                Contact Me
+              </span>
+                        </a>
+                    </p>
+                    <p class="control">
+                        <a class="button is-primary" href="https://www.github.com/noodlescripter">
+                            <span>GitHub</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="tile is-parent has-shadow">
+    <article class="tile is-child notification is-primary">
+        <div class="content has-text-centered has-text-weight-bold">
+            <p>Automate Your Scenarios Faster with EZ Libraries</p>
+        </div>
+    </article>
+</div>
+
+<div class="tile is-parent">
+    <article class="tile is-child notification has-background-grey-dark">
+        <div class="content">
+            <article class="message is-info">
+                <div class="message-header">
+                    <p>About EZ Library</p>
+                    <button class="" aria-label="">😃</button>
+                </div>
+                <hr class="has-background-grey-dark">
+                <div class="message-body">
+                    <p>
+                        <strong>1. @ez-library/cypress:</strong>
+                        If you're familiar with Cypress, you'll love the convenience and simplicity offered by @ez-library/cypress. It provides a set of pre-built functions and utilities that abstract away the complexities of Cypress, allowing you to write clean and concise automation scripts. Whether you're testing web applications, APIs, or performing end-to-end tests, @ez-library/cypress simplifies the process and reduces the learning curve.
+                    </p>
+                </div>
+                <hr class="has-background-grey-dark">
+                <div class="message-body">
+                    <p>
+                        <strong>2. @ez-library/wdio:</strong> <br>
+                        If you're working with WebDriverIO (WDIO), @ez-library/wdio is the library you need. Designed to enhance the functionality and productivity of WDIO, @ez-library/wdio offers a comprehensive set of utilities and helper functions. It streamlines the test writing process, providing shortcuts for common actions, custom assertions, and seamless integration with popular testing frameworks. With @ez-library/wdio, you can achieve faster test automation and maximize the benefits of WebDriverIO.
+                    </p>
+                </div>
+                <hr class="has-background-grey-dark">
+                <div class="message-body">
+                    <p>
+                        <strong>3. @ez-library/playwright:</strong> <br>
+                        For those who prefer Playwright as their automation tool of choice, @ez-library/playwright is a game-changer. By leveraging Playwright's cross-browser capabilities, @ez-library/playwright enables you to write tests that can be executed on multiple browsers effortlessly. With its intuitive syntax and powerful features, you can automate complex scenarios with ease, making your testing process more robust and reliable.
+                    </p>
+                </div>
+                <hr class="has-background-grey-dark">
+                <div class="message-body">
+                    <p>
+                        <strong>4. Java Library, Selenium:</strong> <br>
+                        Enhanced Element Interaction: With eaSy, interacting with web elements becomes more intuitive. It provides simplified methods to perform common actions like clicking, typing, selecting options, and validating element properties. By encapsulating the complexities of locating and interacting with elements, eaSy makes your automation code more readable and maintainable.
+                        Advanced Wait Handling: Waiting for elements to appear or specific conditions to be met is crucial in automation testing. eaSy simplifies this process by offering explicit wait functions that handle timeouts and expected conditions seamlessly. You can easily wait for elements, page loads, text presence, and more, ensuring stable and reliable test execution.
+                        Reporting and Logging: Keeping track of test execution and generating meaningful reports is essential for test analysis. eaSy includes built-in reporting and logging capabilities, making it easy to generate HTML or PDF reports, capture screenshots, and log test execution details. This feature helps in identifying and debugging issues effectively.
+                    </p>
+                </div>
+
+            </article>
+        </div>
+    </article>
+</div>
+
+<div class="container has-text-centered mt-5">
+    <button class="button is-warning" id="startUsing">Start Using</button>
+</div>
+
+
+
+<!--footer-->
+<footer class="footer mt-6">
+    <div class="content has-text-centered">
+        <p>
+            <strong>EZ Testing Library</strong> by <a href="https://github.com/noodlescripter">@noodlescripter</a>. The source code is licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
+        </p>
+    </div>
+</footer>
+
+<div class="modal" id="modalTrigger">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="container has-text-centered mt-5">
+            <button class="button is-warning is-large"><a href="../wdio/wdio.html">WebdriverIO Lib</a></button>
+        </div>
+        <div class="container has-text-centered mt-5">
+            <button class="button is-warning is-large"><a href="../cypress/cypress.html">Cypress EZ Lib</a></button>
+        </div>
+        <div class="container has-text-centered mt-5">
+            <button class="button is-warning is-large"><a href="../playwright/playwright.html">Playwright Lib</a></button>
+        </div>
+        <div class="container has-text-centered mt-5">
+            <button class="button is-warning is-large"><a href="../selenium/selenium.html">Selenium Lib</a></button>
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+<script src="../navbar/navbar.js"></script>
+</body>
+</html>

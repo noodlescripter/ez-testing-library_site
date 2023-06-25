@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../assets/main.css">
+    <title>WebdriverIO EZ Lib</title>
+</head>
+<body>
+<nav class="navbar is-transparent has-background-grey-dark">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="../main/index.html">
+            <div class="container">
+                <h1 class="has-text-weight-bold has-text-light">EZ TESTING LIBRARY</h1>
+            </div>
+        </a>
+        <div class="navbar-burger has-background-danger" data-target="navbarExampleTransparentExample">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="../main/index.html">
+                Home
+            </a>
+            <a class="navbar-item" href="../cypress/cypress.html">
+                Cypress Lib
+            </a>
+            <a class="navbar-item" href="#">
+                WebdriverIO Lib
+            </a>
+            <a class="navbar-item" href="../playwright/playwright.html">
+                Playwright Lib
+            </a>
+            <a class="navbar-item" href="../selenium/selenium.html">
+                Selenium w/Java Lib
+            </a>
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="field is-grouped">
+                    <p class="control">
+                        <a class="bd-tw-button button" href="https://www.linkedin.com/in/hamim-alam/">
+
+                            <span>
+                Contact Me
+              </span>
+                        </a>
+                    </p>
+                    <p class="control">
+                        <a class="button is-primary" href="https://www.github.com/noodlescripter">
+                            <span>GitHub</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+<div class="tile is-parent">
+    <article class="tile is-child notification is-warning">
+        <div class="content has-text-centered">
+            <p class="has-text-weight-bold is-uppercase">Installation</p>
+            <div class="box has-text-centered has-background-light">
+                <p><strong>npm install @ez-library/wdio</strong></p>
+            </div>
+        </div>
+    </article>
+</div>
+<div class="tile is-parent">
+    <div class="tile is-child notification is-primary">
+        <div class="content has-text-centered">
+            <p class="title">Includes below libraries</p>
+            <div class="columns">
+                <div class="column">
+                    <article class="message has-background-grey">
+                        <div class="message-header">
+                            <p>element.js</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="column">
+                    <article class="message has-background-grey">
+                        <div class="message-header">
+                            <p>scroll.js</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="column">
+                    <article class="message has-background-grey">
+                        <div class="message-header">
+                            <p>select.js</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <article class="message has-background-grey">
+                        <div class="message-header">
+                            <p>wait.js</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Content-->
+<div class="tile is-parent">
+    <article class="tile is-child notification is-danger">
+        <div class="content">
+            <p class="has-text-weight-bold">Two ways to use!!</p>
+            <p class="has-text-weight-bold">#1 (Old)</p>
+
+            <div class="box has-background-grey-darker">
+                <pre class="has-background-grey-dark">
+                    <code class="has-text-weight-bold has-text-light">
+const ez = require("@ez-library/wdio");
+
+describe("Testing made easy with wdio", function(){
+  it("Testing with @ez-library/wdio", async function(){
+        await ez.goTo("https://www.google.com/");
+        await ez.byClassName("name").click();
+        await ez.byId("ID").click();
+        await ez.selectDDFeildByCss_BYINDEX("dropdown css", 1);
+        await ez.selectDDFieldById_BYTEXT("dropdown id", "some text");
+  });
+});
+                    </code>
+                </pre>
+            </div>
+            <p class="has-text-weight-bold">#2 (Recommended)</p>
+            <p>Edit wdio.conf.js and add below line in before: function(){};</p>
+            <div class="box has-background-grey-darker">
+                <pre class="has-background-grey-dark">
+                    <code class="has-text-weight-bold has-text-light">
+before: function (capabilities, specs) {
+    global.ez = require("@ez-library/wdio");
+}
+                    </code>
+                </pre>
+            </div>
+            <p>And Implement in your scripts</p>
+            <div class="box has-background-grey-darker">
+                <pre class="has-background-grey-dark">
+                    <code class="has-text-weight-bold has-text-light">
+describe("Testing made easy with wdio", function(){
+  it("Testing with @ez-library/wdio", async function(){
+        await ez.goTo("https://www.google.com/");
+        await ez.byClassName("name").click();
+        await ez.byId("ID").click();
+        await ez.selectDDFeildByCss_BYINDEX("dropdown css", 1);
+        await ez.selectDDFieldById_BYTEXT("dropdown id", "some text");
+  });
+});
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </article>
+</div>
+
+<div class="container has-text-weight-bold has-text-centered">
+    <button class="button is-primary"><a href="https://github.com/noodlescripter/ez-library_wdio">Learn More</a></button>
+</div>
+
+<!--footer-->
+<footer class="footer mt-6">
+    <div class="content has-text-centered">
+        <p>
+            <strong>EZ Testing Library</strong> by <a href="https://github.com/noodlescripter">@noodlescripter</a>. The source code is licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
+        </p>
+    </div>
+</footer>
+<script src="../navbar/navbar.js"></script>
+</body>
+</html>

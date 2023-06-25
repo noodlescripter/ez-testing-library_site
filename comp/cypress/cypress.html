@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../assets/main.css">
+    <title>Cypress EZ Lib</title>
+</head>
+<body>
+<nav class="navbar is-transparent has-background-grey-dark">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="../main/index.html">
+            <div class="container">
+                <h1 class="has-text-weight-bold has-text-light">EZ TESTING LIBRARY</h1>
+            </div>
+        </a>
+        <div class="navbar-burger has-background-danger" data-target="navbarExampleTransparentExample">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="../main/index.html">
+                Home
+            </a>
+            <a class="navbar-item" href="#">
+                Cypress Lib
+            </a>
+            <a class="navbar-item" href="../wdio/wdio.html">
+                WebdriverIO Lib
+            </a>
+            <a class="navbar-item" href="../playwright/playwright.html">
+                Playwright Lib
+            </a>
+            <a class="navbar-item" href="../selenium/selenium.html">
+                Selenium w/Java Lib
+            </a>
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="field is-grouped">
+                    <p class="control">
+                        <a class="bd-tw-button button" href="https://www.linkedin.com/in/hamim-alam/">
+
+                            <span>
+                Contact Me
+              </span>
+                        </a>
+                    </p>
+                    <p class="control">
+                        <a class="button is-primary" href="https://www.github.com/noodlescripter">
+                            <span>GitHub</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+<div class="tile is-parent">
+    <article class="tile is-child notification is-warning">
+        <div class="content has-text-centered">
+            <p class="has-text-weight-bold is-uppercase">Installation</p>
+            <div class="box has-text-centered has-background-light">
+                <p><strong>npm install @ez-library/cypress</strong></p>
+            </div>
+        </div>
+    </article>
+</div>
+<div class="tile is-parent">
+    <div class="tile is-child notification is-primary">
+        <div class="content has-text-centered">
+            <p class="title">Includes below functions</p>
+            <div class="columns">
+                <div class="column">
+                    <article class="message has-background-grey">
+                        <div class="message-header">
+                            <p>getElemByXpath()</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="column">
+                    <article class="message has-background-grey">
+                        <div class="message-header">
+                            <p>getElemByCss()</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="column">
+                    <article class="message has-background-grey">
+                        <div class="message-header">
+                            <p>getElemById()</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <article class="message has-background-grey">
+                        <div class="message-header">
+                            <p>getElemByName()</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="column">
+                    <article class="message has-background-grey">
+                        <div class="message-header">
+                            <p>getElemByClassName()</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="column">
+                    <article class="message has-background-grey">
+                        <div class="message-header">
+                            <p>clickById()</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <article class="message has-background-grey">
+                        <div class="message-header">
+                            <p>clickByCss()</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="column">
+                    <article class="message has-background-grey">
+                        <div class="message-header">
+                            <p>isDisplayed()</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="column">
+                    <article class="message has-background-grey">
+                        <div class="message-header">
+                            <p>typeById()</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <article class="message has-background-grey">
+                        <div class="message-header">
+                            <p>typeByCss()</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="column">
+                    <article class="message has-background-grey">
+                        <div class="message-header">
+                            <p>getTextById()</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="column">
+                    <article class="message has-background-grey">
+                        <div class="message-header">
+                            <p>getTextByCss()</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <article class="message has-background-grey">
+                        <div class="message-header">
+                            <p>verifyText()</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="column">
+                    <article class="message has-background-grey">
+                        <div class="message-header">
+                            <p>clickButtonByText()</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="column">
+                    <article class="message has-background-grey">
+                        <div class="message-header">
+                            <p>goTo()</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <article class="message has-background-grey">
+                        <div class="message-header">
+                            <p>EZTableClickByClassName()</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="column">
+                    <article class="message has-background-grey">
+                        <div class="message-header">
+                            <p>EZTableClickById()</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="column">
+                    <article class="message has-background-grey">
+                        <div class="message-header">
+                            <p>EZTableTextById()</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <article class="message has-background-grey">
+                        <div class="message-header">
+                            <p>verifyTitle()</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="column">
+                    <article class="message has-background-grey">
+                        <div class="message-header">
+                            <p>EZTableClickByCss()</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="column">
+                    <article class="message has-background-grey">
+                        <div class="message-header">
+                            <p>EZSelect()</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <article class="message has-background-grey">
+                        <div class="message-header">
+                            <p>EZGetToken()</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="column">
+                    <article class="message has-background-grey">
+                        <div class="message-header">
+                            <p>EZGet()</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="column">
+                    <article class="message has-background-grey">
+                        <div class="message-header">
+                            <p>EZPost()</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <article class="message has-background-grey">
+                        <div class="message-header">
+                            <p>EZDelete()</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="column">
+                    <article class="message has-background-grey">
+                        <div class="message-header">
+                            <p>EZPatch()</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="column">
+                    <article class="message has-background-grey">
+                        <div class="message-header">
+                            <p>EZPut()</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Content-->
+<div class="tile is-parent">
+    <article class="tile is-child notification is-danger">
+        <div class="content">
+            <p class="has-text-weight-bold">Example</p>
+            <div class="box has-background-grey-darker">
+                <pre class="has-background-grey-dark">
+                    <code class="has-text-weight-bold has-text-light">
+import ez from '@ez-library/cypress'
+
+describe("Testing made easy with @ez-library/cypress", function(){
+  it("Testing with  @ez-library/cypress", function(){
+    ez.clickById("locator");
+    ez.clickByCss("locator");
+    ez.typeById("locator", "some text");
+    ez.typeByCss("locator", "some text");
+    ez.isDisplayed("locator").then(function(displayed){
+       if(isDisplayed){
+          ez.clickById("locator").click();
+       }
+    })
+  });
+});
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </article>
+</div>
+
+<div class="container has-text-weight-bold has-text-centered">
+    <button class="button is-primary"><a href="https://github.com/noodlescripter/ez-library_cypress/tree/master">Learn More</a></button>
+</div>
+
+<!--footer-->
+<footer class="footer mt-6">
+    <div class="content has-text-centered">
+        <p>
+            <strong>EZ Testing Library</strong> by <a href="https://github.com/noodlescripter">@noodlescripter</a>. The source code is licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
+        </p>
+    </div>
+</footer>
+<script src="../navbar/navbar.js"></script>
+</body>
+</html>
