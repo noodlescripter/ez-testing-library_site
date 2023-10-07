@@ -10,7 +10,6 @@ import { CypressComponent } from './cypress/cypress.component';
 import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 import {NgForOf} from "@angular/common";
-import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -20,8 +19,7 @@ import { ErrorComponent } from './error/error.component';
     NavComponent,
     CypressComponent,
     ContentComponent,
-    FooterComponent,
-    ErrorComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,
