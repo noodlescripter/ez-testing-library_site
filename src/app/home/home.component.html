@@ -1,0 +1,8 @@
+<!--
+<app-content [position]="allLibraries.cypress.position" [content]="allLibraries.cypress.content" [title]="allLibraries.cypress.title"></app-content>
+<app-content [position]="allLibraries.wdio.position" [content]="allLibraries.wdio.content" [title]="allLibraries.wdio.title"></app-content>
+<app-content [position]="allLibraries.playwright.position" [content]="allLibraries.playwright.content" [title]="allLibraries.playwright.title"></app-content>
+-->
+<div *ngFor="let sc of sAllLib">
+  <app-content [position]="sc.href" [content]="sc.content" [title]="sc.title"></app-content>
+</div>
